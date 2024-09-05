@@ -2,7 +2,7 @@
 //
 
 const user_img = document.querySelector(".user_img");
-const userName = document.querySelector(".user_name h1");
+const Reverie = document.querySelector(".Reverie h1");
 const allScores_ = document.querySelector(".allScores_ span");
 const follow_ = document.querySelector(".follow_ span");
 const repo_details = document.querySelector(".repo_details");
@@ -17,7 +17,7 @@ function inputFunction() {
     //trim method will replace before and after white space of given calue
 
     if (input_user.length <= 0) {
-        alert("Please enter github user name");
+        alert("Please enter Kirka user name");
         document.querySelector(".input_user").value = "";
         document.querySelector(".input_user").focus();
         return false;
