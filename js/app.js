@@ -1,4 +1,4 @@
-//https://api.github.com/users/user_name/repos
+//https://api.kirka.io/api/clans/Reverie
 //
 
 const user_img = document.querySelector(".user_img");
@@ -46,7 +46,7 @@ document.querySelector(".input_user").addEventListener("keyup", function (e) {
 
 //fetching user from github api
 function fetchUser() {
-    fetch(`https://api.kirka.io/api/clans/Reverie/`)
+    fetch(`https://api.kirka.io/api/clans/Reverie/${user_name}`)
         .then(response => response.json())
         .then(function (data) {
             //I not testing live because unregistered user can hit data only 60 time per hour
@@ -64,7 +64,7 @@ function fetchUser() {
         })
 
     //fetching repo
-    fetch(`https://api.kirka.io/api/clans//${user_name}/repos`)
+    fetch(`https://api.kirka.io/api/clans/${user_name}`)
         .then(response => response.json())
         .then(function (repo_data) {
             console.log(repo_data);
